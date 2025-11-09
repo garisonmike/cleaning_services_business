@@ -3,7 +3,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Business Concept](#business-concept)
 3. [Technologies Used](#technologies-used)
@@ -16,7 +16,7 @@
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 **SparkleClean** is a simple, user-friendly website for an online cleaning services business. The website allows customers to:
 - Browse available cleaning services
@@ -28,7 +28,7 @@ This is a **static website** built using only **HTML and CSS** - no JavaScript r
 
 ---
 
-## 💡 Business Concept
+## Business Concept
 
 ### What is SparkleClean?
 
@@ -55,7 +55,7 @@ SparkleClean provides an **easy-to-use online booking system** where:
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### HTML5
 - **Semantic HTML elements** for better structure and accessibility
@@ -78,7 +78,7 @@ SparkleClean provides an **easy-to-use online booking system** where:
 
 ---
 
-## 📁 Website Structure
+## Website Structure
 
 ```
 cleaning_services_business/
@@ -101,7 +101,7 @@ cleaning_services_business/
 
 ---
 
-## ✨ Features & Functionality
+## Features & Functionality
 
 ### 1. **Navigation System**
 - Fixed navigation bar at the top of every page
@@ -125,7 +125,7 @@ cleaning_services_business/
 ### 4. **Visual Design**
 - **Color Scheme**: Brown (#5d4037, #795548) and White
 - **Typography**: Clean, readable Arial font
-- **Icons**: Emoji icons for visual interest (🏠, 🧺, 🍽️, etc.)
+- **Icons**: Clean design without distracting elements
 - **Cards**: Service cards with hover effects
 - **Gradients**: Smooth color transitions in headers
 
@@ -137,7 +137,7 @@ cleaning_services_business/
 
 ---
 
-## 🎨 Design Choices
+## Design Choices
 
 ### Color Palette
 - **Primary Brown (#5d4037)**: Navigation, footer, headings - represents earthiness, reliability, cleanliness
@@ -146,11 +146,11 @@ cleaning_services_business/
 - **White**: Content backgrounds, text - cleanliness and simplicity
 
 ### Why Brown Theme?
-- ✓ Represents earthiness and natural cleaning
-- ✓ Conveys reliability and trustworthiness
-- ✓ Creates a warm, welcoming feeling
-- ✓ Less common than blue/green, makes it unique
-- ✓ Professional yet approachable
+- Represents earthiness and natural cleaning
+- Conveys reliability and trustworthiness
+- Creates a warm, welcoming feeling
+- Less common than blue/green, makes it unique
+- Professional yet approachable
 
 ### Layout Design
 - **Clean and minimal**: Not overwhelming for users
@@ -160,7 +160,7 @@ cleaning_services_business/
 
 ---
 
-## 🚀 How to Use/Run the Website
+## How to Use/Run the Website
 
 ### Method 1: Direct File Opening
 1. Navigate to the project folder
@@ -187,16 +187,16 @@ http://localhost:8000
 4. Website opens automatically
 
 ### Testing the Website:
-1. ✓ Click all navigation links (Home, Services, About, Contact)
-2. ✓ Click "Book Now" buttons (should go to Contact page)
-3. ✓ Try submitting the form without filling fields (should show validation errors)
-4. ✓ Try entering invalid email (should show error)
-5. ✓ Try selecting a past date (won't allow it)
-6. ✓ Resize browser window (should be responsive)
+1. Click all navigation links (Home, Services, About, Contact)
+2. Click "Book Now" buttons (should go to Contact page)
+3. Try submitting the form without filling fields (should show validation errors)
+4. Try entering invalid email (should show error)
+5. Try selecting a past date (won't allow it)
+6. Resize browser window (should be responsive)
 
 ---
 
-## 📄 Page Descriptions
+## Page Descriptions
 
 ### 1. **Home Page (index.html)**
 
@@ -304,7 +304,7 @@ Form Fields:
 
 ---
 
-## 📱 Responsive Design Breakpoints
+## Responsive Design Breakpoints
 
 ### Desktop (> 768px)
 - Full navigation bar
@@ -326,7 +326,7 @@ Form Fields:
 
 ---
 
-## 📊 Form Validation (HTML5)
+## Form Validation (HTML5)
 
 The contact form uses **built-in HTML5 validation** (no JavaScript needed):
 
@@ -348,36 +348,36 @@ The contact form uses **built-in HTML5 validation** (no JavaScript needed):
 
 ---
 
-## 🎓 What You Learned / Technologies Demonstrated
+## What You Learned / Technologies Demonstrated
 
 ### HTML Skills:
-- ✓ Semantic HTML5 elements (`<nav>`, `<section>`, `<footer>`)
-- ✓ Form creation with various input types
-- ✓ Built-in form validation attributes
-- ✓ Proper document structure
-- ✓ Internal linking between pages
+- Semantic HTML5 elements (`<nav>`, `<section>`, `<footer>`)
+- Form creation with various input types
+- Built-in form validation attributes
+- Proper document structure
+- Internal linking between pages
 
 ### CSS Skills:
-- ✓ Flexbox for navigation and layouts
-- ✓ CSS Grid for responsive card layouts
-- ✓ Custom color schemes
-- ✓ Gradient backgrounds
-- ✓ Hover effects and transitions
-- ✓ Media queries for responsiveness
-- ✓ Box model (padding, margin, border)
-- ✓ Positioning (sticky navigation)
+- Flexbox for navigation and layouts
+- CSS Grid for responsive card layouts
+- Custom color schemes
+- Gradient backgrounds
+- Hover effects and transitions
+- Media queries for responsiveness
+- Box model (padding, margin, border)
+- Positioning (sticky navigation)
 
 ### Web Design Principles:
-- ✓ Consistent design across pages
-- ✓ User-friendly navigation
-- ✓ Visual hierarchy
-- ✓ Whitespace usage
-- ✓ Responsive design
-- ✓ Accessibility considerations
+- Consistent design across pages
+- User-friendly navigation
+- Visual hierarchy
+- Whitespace usage
+- Responsive design
+- Accessibility considerations
 
 ---
 
-## 🎤 Presentation Talking Points
+## Presentation Talking Points
 
 ### Introduction (1 min)
 "Our project is SparkleClean, an online cleaning services booking platform. It solves the problem of finding reliable cleaners by providing an easy-to-use website where customers can browse services and book cleanings online."
@@ -400,7 +400,7 @@ The contact form uses **built-in HTML5 validation** (no JavaScript needed):
 
 ---
 
-## 🔮 Future Enhancements (If Asked)
+## Future Enhancements (If Asked)
 
 If this were to be developed further, potential additions could include:
 
@@ -429,7 +429,7 @@ If this were to be developed further, potential additions could include:
 
 ---
 
-## ✅ Project Checklist
+## Project Checklist
 
 - [x] 4 separate HTML pages created
 - [x] All pages properly linked together
@@ -444,7 +444,7 @@ If this were to be developed further, potential additions could include:
 
 ---
 
-## 📝 Credits
+## Credits
 
 **Project**: SparkleClean Cleaning Services Website  
 **Type**: Class Project  
@@ -453,7 +453,7 @@ If this were to be developed further, potential additions could include:
 
 ---
 
-## 📞 Questions for Q&A
+## Questions for Q&A
 
 Be prepared to answer:
 
@@ -488,7 +488,7 @@ Be prepared to answer:
 
 ---
 
-## 🎯 Summary
+## Summary
 
 SparkleClean is a **complete, functional static website** built with HTML and CSS that demonstrates:
 - Multi-page website structure
@@ -497,7 +497,7 @@ SparkleClean is a **complete, functional static website** built with HTML and CS
 - Professional design principles
 - Clean, maintainable code
 
-Perfect for understanding web development fundamentals! 🚀
+Perfect for understanding web development fundamentals!
 
 ---
 

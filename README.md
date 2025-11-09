@@ -2,17 +2,17 @@
 
 A simple, professional website for an online cleaning services business built with pure HTML and CSS.
 
-## 🌟 Overview
+## Overview
 
 SparkleClean is an online platform that connects homeowners with professional cleaning service providers. Customers can browse services, learn about the company, and book cleaning services through a simple contact form.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **HTML5** - Structure and content
 - **CSS3** - Styling and responsive design
 - **No JavaScript** - Pure HTML/CSS implementation
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 cleaning_services_business/
@@ -25,14 +25,14 @@ cleaning_services_business/
 └── DOCUMENTATION.md    # Detailed documentation for presentation
 ```
 
-## 📄 Pages
+## Pages
 
 1. **Home (index.html)** - Landing page with hero section and key features
 2. **Services (services.html)** - Detailed list of 6 cleaning services with pricing
 3. **About (about.html)** - Company information and how the service works
 4. **Contact (contact.html)** - Contact form for booking services
 
-## 🚀 How to Run
+## How to Run
 
 ### Option 1: Direct Opening
 Simply open `index.html` in any web browser.
@@ -50,16 +50,16 @@ python3 -m http.server 8000
 2. Right-click `index.html`
 3. Select "Open with Live Server"
 
-## ✨ Features
+## Features
 
-- ✅ Fully responsive design (mobile, tablet, desktop)
-- ✅ Navigation between all 4 pages
-- ✅ HTML5 form validation (no JavaScript needed)
-- ✅ Professional brown and white color scheme
-- ✅ Clean, maintainable code
-- ✅ Touch-friendly buttons and links
+- Fully responsive design (mobile, tablet, desktop)
+- Navigation between all 4 pages
+- HTML5 form validation (no JavaScript needed)
+- Professional brown and white color scheme
+- Clean, maintainable code
+- Touch-friendly buttons and links
 
-## 🎨 Services Offered
+## Services Offered
 
 1. **General House Cleaning** - $50
 2. **Laundry & Ironing** - $30
@@ -68,14 +68,14 @@ python3 -m http.server 8000
 5. **Window Cleaning** - $25
 6. **Deep Cleaning** - $100
 
-## 📱 Responsive Design
+## Responsive Design
 
 The website is fully responsive and works on:
-- 📱 Mobile devices (320px+)
-- 📱 Tablets (768px+)
-- 💻 Desktops (1200px+)
+- Mobile devices (320px+)
+- Tablets (768px+)
+- Desktops (1200px+)
 
-## 📖 Documentation
+## Documentation
 
 For detailed documentation including:
 - Business concept explanation
@@ -85,7 +85,7 @@ For detailed documentation including:
 
 See **[DOCUMENTATION.md](DOCUMENTATION.md)**
 
-## 🎓 Learning Objectives
+## Learning Objectives
 
 This project demonstrates:
 - HTML5 semantic elements and forms
@@ -95,15 +95,15 @@ This project demonstrates:
 - Professional color schemes and design
 - Multi-page website structure
 
-## 🎯 Class Project Notes
+## Class Project Notes
 
-- ✅ Simple and clean design suitable for class presentation
-- ✅ No over-engineering - focuses on fundamentals
-- ✅ Pure HTML/CSS - no JavaScript required
-- ✅ Well-documented and easy to understand
-- ✅ Professional appearance
+- Simple and clean design suitable for class presentation
+- No over-engineering - focuses on fundamentals
+- Pure HTML/CSS - no JavaScript required
+- Well-documented and easy to understand
+- Professional appearance
 
-## 📞 Contact Information (Demo)
+## Contact Information (Demo)
 
 - Email: info@sparkleclean.com
 - Phone: +1 (555) 123-4567
