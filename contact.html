@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SparkleClean</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">SparkleClean</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Book a service or get in touch with us</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions or ready to book? Fill out the form and we'll get back to you shortly!</p>
+
+                    <div class="info-item">
+                        <strong>📧 Email:</strong>
+                        <p>info@sparkleclean.com</p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>📞 Phone:</strong>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>🕒 Hours:</strong>
+                        <p>Monday - Saturday: 8:00 AM - 8:00 PM<br>
+                            Sunday: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Needed *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="general">General House Cleaning</option>
+                                <option value="laundry">Laundry & Ironing</option>
+                                <option value="kitchen">Kitchen Cleaning</option>
+                                <option value="bathroom">Bathroom Cleaning</option>
+                                <option value="windows">Window Cleaning</option>
+                                <option value="deep">Deep Cleaning</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Preferred Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell us more about your cleaning needs..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-full">Submit Booking Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SparkleClean. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
