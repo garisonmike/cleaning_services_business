@@ -2,19 +2,26 @@
 <html lang="en">
 
 <head>
+    <!-- Character encoding for proper text display -->
     <meta charset="UTF-8">
+    <!-- Viewport meta tag for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title for services page -->
     <title>Our Services - SparkleClean</title>
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Navigation bar -->
+    <!-- Navigation bar - same across all pages -->
     <nav class="navbar">
         <div class="container">
+            <!-- Logo/Brand name -->
             <div class="logo">SparkleClean</div>
+            <!-- Navigation menu links -->
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
+                <!-- 'active' class highlights current page -->
                 <li><a href="services.html" class="active">Services</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -22,82 +29,79 @@
         </div>
     </nav>
 
-    <!-- Page header -->
+    <!-- Page header with title and description -->
     <section class="page-header">
         <div class="container">
-            <h1>Our Services</h1>
+            <h1>Our Cleaning Services</h1>
             <p>Choose from our range of professional cleaning services</p>
         </div>
     </section>
 
-    <!-- List of all services we offer -->
-    <section class="services-section">
+    <!-- Services section displaying all available services -->
+    <section class="services">
         <div class="container">
-            <div class="service-list">
-                <div class="service-item">
-                    <div class="service-icon"></div>
-                    <div class="service-details">
-                        <h3>General House Cleaning</h3>
-                        <p>Deep cleaning of all rooms including dusting, vacuuming, mopping floors, and sanitizing
-                            surfaces.</p>
-                        <p class="price">Starting at $50</p>
-                        <a href="contact.html" class="btn">Book Now</a>
-                    </div>
+            <!-- Grid container for service cards -->
+            <div class="services-grid">
+                <!-- Service 1: General House Cleaning -->
+                <div class="service-card">
+                    <div class="icon"></div>
+                    <h3>General House Cleaning</h3>
+                    <p>Complete cleaning of your entire home including dusting, vacuuming, and mopping all rooms.</p>
+                    <!-- Price display -->
+                    <p class="price">Starting at $50</p>
+                    <!-- Button linking to contact/booking form -->
+                    <a href="contact.html" class="btn">Book Now</a>
                 </div>
 
-                <div class="service-item">
-                    <div class="service-icon"></div>
-                    <div class="service-details">
-                        <h3>Laundry & Ironing</h3>
-                        <p>Complete laundry service including washing, drying, ironing, and folding your clothes.</p>
-                        <p class="price">Starting at $30</p>
-                        <a href="contact.html" class="btn">Book Now</a>
-                    </div>
+                <!-- Service 2: Laundry and Ironing -->
+                <div class="service-card">
+                    <div class="icon"></div>
+                    <h3>Laundry and Ironing</h3>
+                    <p>Professional washing, drying, and ironing of your clothes with care.</p>
+                    <p class="price">Starting at $30</p>
+                    <a href="contact.html" class="btn">Book Now</a>
                 </div>
 
-                <div class="service-item">
-                    <div class="service-icon"></div>
-                    <div class="service-details">
-                        <h3>Kitchen Cleaning</h3>
-                        <p>Thorough kitchen cleaning including appliances, countertops, sink, and cabinets.</p>
-                        <p class="price">Starting at $40</p>
-                        <a href="contact.html" class="btn">Book Now</a>
-                    </div>
+                <!-- Service 3: Kitchen Cleaning -->
+                <div class="service-card">
+                    <div class="icon"></div>
+                    <h3>Kitchen Cleaning</h3>
+                    <p>Deep cleaning of kitchen surfaces, appliances, cabinets, and floors.</p>
+                    <p class="price">Starting at $40</p>
+                    <a href="contact.html" class="btn">Book Now</a>
                 </div>
 
-                <div class="service-item">
-                    <div class="service-icon"></div>
-                    <div class="service-details">
-                        <h3>Bathroom Cleaning</h3>
-                        <p>Complete bathroom sanitization including tiles, fixtures, mirrors, and floors.</p>
-                        <p class="price">Starting at $35</p>
-                        <a href="contact.html" class="btn">Book Now</a>
-                    </div>
+                <!-- Service 4: Bathroom Cleaning -->
+                <div class="service-card">
+                    <div class="icon"></div>
+                    <h3>Bathroom Cleaning</h3>
+                    <p>Thorough sanitization and cleaning of bathrooms including toilets, sinks, and showers.</p>
+                    <p class="price">Starting at $35</p>
+                    <a href="contact.html" class="btn">Book Now</a>
                 </div>
 
-                <div class="service-item">
-                    <div class="service-icon"></div>
-                    <div class="service-details">
-                        <h3>Window Cleaning</h3>
-                        <p>Professional window cleaning for a streak-free shine inside and outside.</p>
-                        <p class="price">Starting at $25</p>
-                        <a href="contact.html" class="btn">Book Now</a>
-                    </div>
+                <!-- Service 5: Window Cleaning -->
+                <div class="service-card">
+                    <div class="icon"></div>
+                    <h3>Window Cleaning</h3>
+                    <p>Professional cleaning of windows inside and out for a crystal-clear view.</p>
+                    <p class="price">Starting at $25</p>
+                    <a href="contact.html" class="btn">Book Now</a>
                 </div>
 
-                <div class="service-item">
-                    <div class="service-icon"></div>
-                    <div class="service-details">
-                        <h3>Deep Cleaning</h3>
-                        <p>Comprehensive deep cleaning service covering every corner of your home.</p>
-                        <p class="price">Starting at $100</p>
-                        <a href="contact.html" class="btn">Book Now</a>
-                    </div>
+                <!-- Service 6: Deep Cleaning -->
+                <div class="service-card">
+                    <div class="icon"></div>
+                    <h3>Deep Cleaning</h3>
+                    <p>Intensive cleaning of your entire home including hard-to-reach areas and detailed work.</p>
+                    <p class="price">Starting at $100</p>
+                    <a href="contact.html" class="btn">Book Now</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer with copyright information -->
     <footer>
         <div class="container">
             <p>2025 SparkleClean. All rights reserved.</p>

@@ -1,415 +1,683 @@
-/* Reset and base styles */
+/* ========================================
+   GLOBAL STYLES & RESET
+   ======================================== */
+
+/* Reset default browser styles for consistent appearance */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* Include padding and border in element's total width/height */
 }
 
+/* Base body styling */
 body {
     font-family: Arial, sans-serif;
+    /* Clean, readable font */
     line-height: 1.6;
+    /* Comfortable line spacing for readability */
     color: #333;
-    background: #fff;
+    /* Dark gray text for better readability than pure black */
 }
 
-/* Layout container */
+/* Container class to center content and limit width */
 .container {
     max-width: 1200px;
+    /* Maximum width for large screens */
     margin: 0 auto;
+    /* Center the container horizontally */
     padding: 0 20px;
-    box-sizing: border-box;
+    /* Horizontal padding for spacing on small screens */
 }
 
-/* Navbar */
+
+/* ========================================
+   NAVIGATION BAR
+   ======================================== */
+
+/* Navigation bar styling */
 .navbar {
     background-color: #5d4037;
-    padding: 15px 0;
+    /* Dark brown background */
+    color: white;
+    /* White text for contrast */
+    padding: 1rem 0;
+    /* Vertical padding */
+    position: sticky;
+    /* Stays at top when scrolling */
+    top: 0;
+    /* Position at the very top */
+    z-index: 100;
+    /* Ensures navbar stays above other content */
 }
 
+/* Flexbox layout for navigation container */
 .navbar .container {
     display: flex;
+    /* Use flexbox for layout */
     justify-content: space-between;
+    /* Space between logo and nav links */
     align-items: center;
-    z-index: 100;
+    /* Vertically center items */
 }
 
+/* Logo/Brand styling */
 .logo {
-    font-size: 24px;
+    font-size: 1.5rem;
+    /* Larger text for brand name */
     font-weight: bold;
-    color: #d7ccc8;
+    /* Bold for emphasis */
 }
 
-/* Navigation links */
+/* Navigation links list */
 .nav-links {
     display: flex;
+    /* Horizontal layout for links */
     list-style: none;
-    gap: 1rem;
+    /* Remove bullet points */
+    gap: 2rem;
+    /* Space between links */
 }
 
-.nav-links li {
-    margin-left: 0;
-}
-
+/* Navigation link styling */
 .nav-links a {
     color: white;
+    /* White text */
     text-decoration: none;
-    padding: 8px 12px;
-    transition: color 0.2s, background 0.2s;
+    /* Remove underline */
+    transition: color 0.3s;
+    /* Smooth color transition on hover */
 }
 
+/* Hover effect for navigation links */
 .nav-links a:hover {
     color: #d7ccc8;
+    /* Light brown on hover */
 }
 
+/* Active page styling */
 .nav-links a.active {
-    color: #d7ccc8;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 5px;
+    border-bottom: 2px solid white;
+    /* Underline active page */
 }
 
-/* Buttons */
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #795548;
-    color: white;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
-.btn:hover {
-    background-color: #6d4c41;
-}
+/* ========================================
+   HERO SECTION (HOME PAGE)
+   ======================================== */
 
-/* Hero / Page header */
-.page-header,
+/* Hero section with gradient background */
 .hero {
-    text-align: center;
-    padding: 60px 0;
-    background: linear-gradient(135deg, #8d6e63 0%, #6d4c41 100%);
+    background: linear-gradient(135deg, #5d4037, #795548);
+    /* Brown gradient */
     color: white;
-}
-
-.page-header h1,
-.hero h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.page-header p,
-.hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-/* Features grid */
-.features {
-    padding: 60px 0;
-    background-color: #efebe9;
+    /* White text for contrast */
     text-align: center;
+    /* Center-align text */
+    padding: 6rem 0;
+    /* Large vertical padding */
 }
 
+/* Hero heading */
+.hero h1 {
+    font-size: 3rem;
+    /* Large heading size */
+    margin-bottom: 1rem;
+    /* Space below heading */
+}
+
+/* Hero paragraph */
+.hero p {
+    font-size: 1.2rem;
+    /* Slightly larger text */
+    margin-bottom: 2rem;
+    /* Space below paragraph */
+}
+
+
+/* ========================================
+   BUTTON STYLES
+   ======================================== */
+
+/* Primary button styling */
+.btn {
+    display: inline-block;
+    /* Allows padding and margin */
+    background-color: #795548;
+    /* Medium brown background */
+    color: white;
+    /* White text */
+    padding: 0.75rem 2rem;
+    /* Padding for size */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s;
+    /* Smooth background transition */
+    border: none;
+    /* Remove default button border */
+    cursor: pointer;
+    /* Show pointer cursor on hover */
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #5d4037;
+    /* Darker brown on hover */
+}
+
+
+/* ========================================
+   FEATURES SECTION (HOME PAGE)
+   ======================================== */
+
+/* Features section styling */
+.features {
+    padding: 4rem 0;
+    /* Vertical padding */
+    background-color: #f5f5f5;
+    /* Light gray background */
+}
+
+/* Features section heading */
 .features h2 {
-    font-size: 32px;
-    color: #4e342e;
-    margin-bottom: 50px;
+    text-align: center;
+    /* Center heading */
+    margin-bottom: 3rem;
+    /* Space below heading */
+    color: #5d4037;
+    /* Brown color */
+    font-size: 2rem;
+    /* Large heading size */
 }
 
+/* Grid layout for feature cards */
 .features-grid {
     display: grid;
+    /* Use CSS Grid */
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    font-size: 1.5rem;
+    /* 4 equal columns */
+    gap: 2rem;
+    /* Space between cards */
 }
 
+/* Individual feature card styling */
 .feature-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background: white;
-    color: #5d4037;
-    padding: 30px;
+    /* White background */
+    padding: 2rem;
+    /* Internal padding */
     border-radius: 10px;
+    /* Rounded corners */
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Center-align text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
     transition: transform 0.3s;
+    /* Smooth transform transition */
 }
 
+/* Feature card hover effect */
 .feature-card:hover {
     transform: translateY(-5px);
+    /* Lift card slightly on hover */
 }
 
+/* Icon placeholder in feature cards */
+.feature-card .icon {
+    width: 60px;
+    /* Icon width */
+    height: 60px;
+    /* Icon height */
+    background-color: #5d4037;
+    /* Brown background */
+    border-radius: 50%;
+    /* Circular shape */
+    margin: 0 auto 1rem;
+    /* Center horizontally with bottom margin */
+}
+
+/* Feature card heading */
 .feature-card h3 {
-    margin-bottom: 10px;
-}
-
-/* Icon */
-.icon {
-    font-size: 48px;
-    padding: 2rem;
     color: #5d4037;
+    /* Brown color */
+    margin-bottom: 0.5rem;
+    /* Space below heading */
 }
 
-/* Services */
-.services-section {
-    padding: 60px 0;
+
+/* ========================================
+   PAGE HEADER (SERVICES, ABOUT, CONTACT)
+   ======================================== */
+
+/* Page header styling for inner pages */
+.page-header {
+    background: linear-gradient(135deg, #5d4037, #795548);
+    /* Brown gradient */
     color: white;
-    background: linear-gradient(135deg, #8d6e63 0%, #6d4c41 100%);
+    /* White text */
+    text-align: center;
+    /* Center-align text */
+    padding: 4rem 0;
+    /* Vertical padding */
 }
 
-.service-list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    text-decoration: none;
-    transition: color 0.3s;
+/* Page header heading */
+.page-header h1 {
+    font-size: 2.5rem;
+    /* Large heading */
+    margin-bottom: 0.5rem;
+    /* Space below heading */
 }
 
-.service-item {
-    display: flex;
-    gap: 30px;
+
+/* ========================================
+   SERVICES PAGE
+   ======================================== */
+
+/* Services section styling */
+.services {
+    padding: 4rem 0;
+    /* Vertical padding */
+}
+
+/* Grid layout for service cards */
+.services-grid {
+    display: grid;
+    /* Use CSS Grid */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 equal columns */
+    gap: 2rem;
+    /* Space between cards */
+}
+
+/* Individual service card styling */
+.service-card {
     background: white;
-    padding: 30px;
+    /* White background */
+    padding: 2rem;
+    /* Internal padding */
     border-radius: 10px;
+    /* Rounded corners */
+    text-align: center;
+    /* Center-align text */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    align-items: center;
+    /* Shadow for depth */
+    transition: transform 0.3s;
+    /* Smooth transform transition */
 }
 
-.service-icon {
-    font-size: 48px;
-    min-width: 80px;
-    color: #795548;
+/* Service card hover effect */
+.service-card:hover {
+    transform: translateY(-5px);
+    /* Lift card on hover */
 }
 
-.service-details {
-    flex: 1;
+/* Icon placeholder in service cards */
+.service-card .icon {
+    width: 80px;
+    /* Icon width */
+    height: 80px;
+    /* Icon height */
+    background-color: #efebe9;
+    /* Light brown background */
+    border-radius: 50%;
+    /* Circular shape */
+    margin: 0 auto 1rem;
+    /* Center horizontally with bottom margin */
 }
 
-.service-details h3 {
+/* Service card heading */
+.service-card h3 {
     color: #5d4037;
-    margin-bottom: 10px;
+    /* Brown color */
+    margin-bottom: 1rem;
+    /* Space below heading */
 }
 
-.service-details p {
-    margin-bottom: 15px;
-}
-
-/* Price */
-.price {
-    font-weight: bold;
+/* Price styling in service cards */
+.service-card .price {
+    font-size: 1.5rem;
+    /* Large price text */
     color: #795548;
-    font-size: 20px;
+    /* Medium brown color */
+    font-weight: bold;
+    /* Bold for emphasis */
+    margin: 1rem 0;
+    /* Vertical margin */
 }
 
-/* About */
+
+/* ========================================
+   ABOUT PAGE
+   ======================================== */
+
+/* About content section styling */
 .about-content {
     padding: 4rem 0;
-    text-align: center;
+    /* Vertical padding */
 }
 
-.about-text {
-    max-width: 900px;
-    margin: 0 auto;
-    background: #efebe9;
-    padding: 25px;
-    border-radius: 10px;
+/* Individual about section */
+.about-section {
+    margin-bottom: 3rem;
+    /* Space between sections */
 }
 
-.about-text h2 {
-    font-size: 40px;
+/* About section heading */
+.about-section h2 {
     color: #5d4037;
-    margin: 30px 0 15px;
+    /* Brown color */
+    margin-bottom: 1rem;
+    /* Space below heading */
+    font-size: 1.8rem;
+    /* Heading size */
 }
 
-.about-text p {
-    font-size: 1.25rem;
-    margin-bottom: 15px;
+/* About section paragraph */
+.about-section p {
+    line-height: 1.8;
+    /* Increased line height for readability */
+    color: #555;
+    /* Medium gray text */
 }
 
-/* Steps */
-.steps {
+/* Grid layout for steps/process */
+.steps-grid {
     display: grid;
+    /* Use CSS Grid */
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin: 30px 0;
-    font-size: 20px;
+    /* 3 equal columns */
+    gap: 2rem;
+    /* Space between cards */
+    margin-top: 2rem;
+    /* Space above grid */
 }
 
-.step {
+/* Individual step card styling */
+.step-card {
     background: #efebe9;
-    padding: 25px;
+    /* Light brown background */
+    padding: 2rem;
+    /* Internal padding */
     border-radius: 10px;
+    /* Rounded corners */
     text-align: center;
+    /* Center-align text */
 }
 
+/* Step number styling */
 .step-number {
     width: 50px;
+    /* Circle width */
     height: 50px;
-    border-radius: 50%;
-    background: #795548;
+    /* Circle height */
+    background-color: #5d4037;
+    /* Brown background */
     color: white;
-    display: inline-flex;
+    /* White text */
+    border-radius: 50%;
+    /* Circular shape */
+    display: flex;
+    /* Use flexbox for centering */
     align-items: center;
+    /* Vertically center number */
     justify-content: center;
+    /* Horizontally center number */
+    font-size: 1.5rem;
+    /* Large number */
     font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 15px;
+    /* Bold text */
+    margin: 0 auto 1rem;
+    /* Center horizontally with bottom margin */
 }
 
-/* Benefits list */
+/* Benefits list styling */
 .benefits-list {
     list-style: none;
-    margin: 1rem 0;
-    padding: 0;
-    color: #5d4037;
+    /* Remove default bullets */
+    margin-top: 1rem;
+    /* Space above list */
 }
 
+/* Individual benefit item */
 .benefits-list li {
-    padding: 1rem;
-    border-radius: 5px;
-    background: transparent;
+    padding: 0.5rem 0;
+    /* Vertical padding */
+    padding-left: 2rem;
+    /* Left padding for custom bullet */
+    position: relative;
+    /* Position for pseudo-element */
+    color: #555;
+    /* Medium gray text */
 }
 
-/* Contact */
-.contact-section {
-    padding: 60px 0;
-    background: #795548;
-    color: white;
+/* Custom checkmark bullet for benefits */
+.benefits-list li:before {
+    content: "✓";
+    /* Checkmark character */
+    position: absolute;
+    /* Position absolutely */
+    left: 0;
+    /* Align to left */
+    color: #5d4037;
+    /* Brown color */
+    font-weight: bold;
+    /* Bold checkmark */
+    font-size: 1.2rem;
+    /* Larger checkmark */
 }
 
+
+/* ========================================
+   CONTACT PAGE
+   ======================================== */
+
+/* Contact section styling */
+.contact {
+    padding: 4rem 0;
+    /* Vertical padding */
+}
+
+/* Grid layout for contact page (info + form) */
 .contact-grid {
     display: grid;
+    /* Use CSS Grid */
     grid-template-columns: 1fr 1fr;
+    /* Two equal columns */
     gap: 3rem;
-    align-items: start;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background: white;
-    color: #5d4037;
-    padding: 30px;
-    border-radius: 10px;
+    /* Space between columns */
 }
 
+/* Contact info section styling */
 .contact-info h2 {
-    font-weight: bold;
-    margin-bottom: 15px;
     color: #5d4037;
+    /* Brown color */
+    margin-bottom: 1rem;
+    /* Space below heading */
 }
 
-.contact-form {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
+/* Contact info paragraph */
+.contact-info p {
+    color: #555;
+    /* Medium gray text */
+    margin-bottom: 2rem;
+    /* Space below paragraph */
 }
 
-/* Form */
+/* Individual info item */
+.info-item {
+    margin-bottom: 1.5rem;
+    /* Space between items */
+}
+
+/* Info item heading */
+.info-item h3 {
+    color: #5d4037;
+    /* Brown color */
+    margin-bottom: 0.5rem;
+    /* Space below heading */
+}
+
+/* Contact form heading */
+.contact-form h2 {
+    color: #5d4037;
+    /* Brown color */
+    margin-bottom: 1.5rem;
+    /* Space below heading */
+}
+
+/* Form group (label + input wrapper) */
 .form-group {
     margin-bottom: 1.5rem;
+    /* Space between form fields */
 }
 
+/* Form label styling */
 .form-group label {
     display: block;
-    margin-bottom: 8px;
-    color: #5d4037;
+    /* Block display for full width */
+    margin-bottom: 0.5rem;
+    /* Space below label */
+    color: #555;
+    /* Medium gray text */
+    font-weight: bold;
+    /* Bold labels */
 }
 
+/* Input field styling */
 .form-group input,
 .form-group select,
 .form-group textarea {
-    display: block;
     width: 100%;
-    padding: 12px;
-    border: 1px solid #d7ccc8;
+    /* Full width */
+    padding: 0.75rem;
+    /* Internal padding */
+    border: 1px solid #ddd;
+    /* Light gray border */
     border-radius: 5px;
-    font-size: 16px;
+    /* Rounded corners */
+    font-family: inherit;
+    /* Inherit font from body */
+    font-size: 1rem;
+    /* Base font size */
 }
 
+/* Focus state for form inputs */
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #795548;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    /* Remove default outline */
+    border-color: #5d4037;
+    /* Brown border on focus */
 }
 
-.form-message {
-    margin-top: 1rem;
-    display: none;
-    padding: 12px;
-    border-radius: 5px;
+/* Textarea specific styling */
+.form-group textarea {
+    resize: vertical;
+    /* Allow only vertical resizing */
 }
 
-.form-message.success {
-    display: block;
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-}
 
-.form-message.error {
-    display: block;
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
-}
+/* ========================================
+   FOOTER
+   ======================================== */
 
-/* Footer */
+/* Footer styling */
 footer {
     background-color: #5d4037;
+    /* Dark brown background */
     color: white;
+    /* White text */
     text-align: center;
+    /* Center-align text */
     padding: 2rem 0;
+    /* Vertical padding */
     margin-top: 4rem;
+    /* Space above footer */
 }
 
-/* Responsive */
+
+/* ========================================
+   RESPONSIVE DESIGN - MEDIA QUERIES
+   ======================================== */
+
+/* Tablet and smaller screens (768px and below) */
 @media (max-width: 768px) {
+
+    /* Adjust hero heading size */
+    .hero h1 {
+        font-size: 2rem;
+        /* Smaller heading on mobile */
+    }
+
+    /* Stack features in 2 columns on tablets */
     .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns */
+    }
+
+    /* Stack services in 2 columns on tablets */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns */
+    }
+
+    /* Stack steps in single column */
+    .steps-grid {
         grid-template-columns: 1fr;
+        /* Single column */
     }
 
-    .steps {
-        grid-template-columns: 1fr;
-    }
-
-    .service-item {
-        flex-direction: column;
-        text-align: center;
-    }
-
+    /* Stack contact grid (info and form) */
     .contact-grid {
         grid-template-columns: 1fr;
-    }
-
-    .nav-links {
-        gap: 1rem;
-    }
-
-    .hero h1,
-    .page-header h1 {
-        font-size: 2rem;
-    }
-
-    .hero p,
-    .page-header p {
-        font-size: 1rem;
+        /* Single column */
     }
 }
 
+/* Mobile phones (480px and below) */
 @media (max-width: 480px) {
+
+    /* Further reduce hero heading size */
+    .hero h1 {
+        font-size: 1.5rem;
+        /* Smaller heading */
+    }
+
+    /* Reduce hero padding */
+    .hero {
+        padding: 3rem 0;
+        /* Less padding */
+    }
+
+    /* Stack features in single column */
+    .features-grid {
+        grid-template-columns: 1fr;
+        /* Single column */
+    }
+
+    /* Stack services in single column */
+    .services-grid {
+        grid-template-columns: 1fr;
+        /* Single column */
+    }
+
+    /* Stack navigation links vertically */
+    .nav-links {
+        flex-direction: column;
+        /* Vertical layout */
+        gap: 1rem;
+        /* Reduce gap */
+    }
+
+    /* Adjust navigation container */
     .navbar .container {
         flex-direction: column;
+        /* Stack logo and nav */
         gap: 1rem;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .features-grid {
-        gap: 1rem;
+        /* Space between elements */
     }
 }

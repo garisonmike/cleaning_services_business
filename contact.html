@@ -2,108 +2,127 @@
 <html lang="en">
 
 <head>
+    <!-- Character encoding for proper text display -->
     <meta charset="UTF-8">
+    <!-- Viewport meta tag for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title for contact page -->
     <title>Contact Us - SparkleClean</title>
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Navigation bar -->
+    <!-- Navigation bar - consistent across all pages -->
     <nav class="navbar">
         <div class="container">
+            <!-- Logo/Brand name -->
             <div class="logo">SparkleClean</div>
+            <!-- Navigation menu links -->
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
+                <!-- 'active' class highlights current page -->
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Page header -->
+    <!-- Page header with title -->
     <section class="page-header">
         <div class="container">
             <h1>Contact Us</h1>
-            <p>Book a service or get in touch with us</p>
+            <p>Get in touch or book a cleaning service</p>
         </div>
     </section>
 
     <!-- Contact section with info and form -->
-    <section class="contact-section">
+    <section class="contact">
         <div class="container">
+            <!-- Two-column layout: contact info and form -->
             <div class="contact-grid">
-                <!-- Contact information -->
+                <!-- Left column: Contact information -->
                 <div class="contact-info">
                     <h2>Get In Touch</h2>
-                    <p>Have questions or ready to book? Fill out the form and we'll get back to you shortly!</p>
+                    <p>Have questions? Fill out the form or reach us directly:</p>
 
+                    <!-- Contact details list -->
                     <div class="info-item">
-                        <strong>Email:</strong>
+                        <h3>Email</h3>
                         <p>info@sparkleclean.com</p>
                     </div>
 
                     <div class="info-item">
-                        <strong>Phone:</strong>
+                        <h3>Phone</h3>
                         <p>+1 (555) 123-4567</p>
                     </div>
 
                     <div class="info-item">
-                        <strong>Hours:</strong>
-                        <p>Monday - Saturday: 8:00 AM - 8:00 PM<br>Sunday: 9:00 AM - 6:00 PM</p>
+                        <h3>Hours</h3>
+                        <p>Monday - Saturday: 8:00 AM - 8:00 PM<br>Sunday: 9:00 AM - 5:00 PM</p>
                     </div>
                 </div>
 
-                <!-- Booking form -->
-                <div class="contact-form-container">
-                    <form id="contactForm" class="contact-form">
+                <!-- Right column: Booking form -->
+                <div class="contact-form">
+                    <h2>Book a Service</h2>
+                    <!-- Form with HTML5 validation attributes -->
+                    <form action="#" method="POST">
+                        <!-- Full Name input - required field -->
                         <div class="form-group">
-                            <label for="name">Full Name *</label>
+                            <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required>
                         </div>
 
+                        <!-- Email input - required with email validation -->
                         <div class="form-group">
-                            <label for="email">Email Address *</label>
+                            <label for="email">Email Address</label>
                             <input type="email" id="email" name="email" required>
                         </div>
 
+                        <!-- Phone input - required field -->
                         <div class="form-group">
-                            <label for="phone">Phone Number *</label>
+                            <label for="phone">Phone Number</label>
                             <input type="tel" id="phone" name="phone" required>
                         </div>
 
+                        <!-- Service selection dropdown - required -->
                         <div class="form-group">
-                            <label for="service">Service Needed *</label>
+                            <label for="service">Service Needed</label>
                             <select id="service" name="service" required>
                                 <option value="">Select a service</option>
                                 <option value="general">General House Cleaning</option>
-                                <option value="laundry">Laundry & Ironing</option>
+                                <option value="laundry">Laundry and Ironing</option>
                                 <option value="kitchen">Kitchen Cleaning</option>
                                 <option value="bathroom">Bathroom Cleaning</option>
-                                <option value="windows">Window Cleaning</option>
+                                <option value="window">Window Cleaning</option>
                                 <option value="deep">Deep Cleaning</option>
                             </select>
                         </div>
 
+                        <!-- Date picker - required, only allows future dates -->
                         <div class="form-group">
-                            <label for="date">Preferred Date *</label>
-                            <input type="date" id="date" name="date" required>
+                            <label for="date">Preferred Date</label>
+                            <!-- min attribute prevents selecting past dates -->
+                            <input type="date" id="date" name="date" min="2025-11-09" required>
                         </div>
 
+                        <!-- Optional message textarea -->
                         <div class="form-group">
                             <label for="message">Additional Information</label>
-                            <textarea id="message" name="message" rows="4"
-                                placeholder="Tell us more about your cleaning needs..."></textarea>
+                            <textarea id="message" name="message" rows="4"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-full">Submit Booking Request</button>
+                        <!-- Submit button -->
+                        <button type="submit" class="btn">Submit Booking Request</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer with copyright information -->
     <footer>
         <div class="container">
             <p>2025 SparkleClean. All rights reserved.</p>
