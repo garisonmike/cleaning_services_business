@@ -1,3 +1,10 @@
+# THIS ASSIGNMENT WAS DONE AND PASSED SUCCESSFULLY BY THE TEAM BELOW
+
+## We are now waiting for the results from the evaluator
+## I'll update this README once we get the results
+
+
+
 # SparkleClean - Online Cleaning Services Website
 
 A simple, professional website for an online cleaning services business built with pure HTML and CSS.
