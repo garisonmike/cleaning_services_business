@@ -56,3 +56,8 @@ Then visit: http://localhost:8000
 - Responsive design for mobile and desktop
 - Professional brown and white color scheme
 
+
+![alt text](home.png)
+![alt text](services.png)
+![alt text](about.png)
+![alt text](contact_us.png)
