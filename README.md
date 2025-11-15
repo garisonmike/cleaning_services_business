@@ -4,7 +4,6 @@
 ## I'll update this README once we get the results
 
 
-
 # SparkleClean - Online Cleaning Services Website
 
 A simple, professional website for an online cleaning services business built with pure HTML and CSS.
